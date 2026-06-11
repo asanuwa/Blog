@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist",
+    "blog-frontend",
+    "blog-frontend/**/*",
+    "**/*spec.ts",
+    "src/app.ts",
+    "src/server.ts"
+  ]
+}
