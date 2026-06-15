@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navItems = [
-  { href: "/", label: "Blog CMS" },
+  { href: "/", label: "Home" },
   { href: "/blogs", label: "Posts" },
   { href: "/blogs/create", label: "Create Post" },
   { href: "/about", label: "About" },
@@ -42,9 +42,6 @@ export function Navbar() {
           className="flex w-full items-center gap-3 overflow-x-auto text-sm text-muted-foreground sm:w-auto"
         >
           <div className="flex min-w-max items-center gap-1 rounded-lg border border-border bg-card px-2 py-1">
-            <span className="px-2 text-xs font-semibold uppercase text-foreground">
-              Blogs
-            </span>
             <div className="flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
